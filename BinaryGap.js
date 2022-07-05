@@ -31,7 +31,8 @@ function solution(N) {
 				i++;
 			}
 		}
-		if (bin[i] === "1") finalMax = Math.max(finalMax, currentMax);
+		if ( bin[ i ] === "1" )
+			finalMax = Math.max( finalMax, currentMax );
 	}
 	return finalMax;
 }
