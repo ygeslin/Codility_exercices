@@ -43,3 +43,18 @@ function solution(A) {
     }
     return -1
 }
+// * without map
+// function solution(A) {
+//     var counters=[]
+//     for(var i=0;i<A.length;i++){
+//     var current=A[i];
+//         if(typeof counters[current]=="undefined")
+//         counters[current]=1
+//         else
+//         counters[current]++
+//         if(counters[current]>A.length/2)
+//         return i
+
+//     }
+//     return -1;
+// }
