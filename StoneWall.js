@@ -23,6 +23,23 @@
 // each element of array H is an integer within the range [1..1,000,000,000].
 // you can write to stdout for debugging purposes, e.g.
 // console.log('this is a debug message');
+function solution(H) {
+	// write your code in JavaScript (Node.js 8.9.4)
+	const stack = [];
+	let bricks = 0;
+
+	for (let i = 0; i < H.length; i++) {
+		while (stack.length > 0 && stack[stack.length - 1] > H[i]) {
+			stack.pop();
+		}
+
+		if (stack.length === 0 || stack[stack.length - 1] < H[i]) {
+			stack.push(H[i]);
+			bricks++;
+		}
+	}
+	return bricks;
+}
 
 function solution(H) {
 	// write your code in JavaScript (Node.js 4.0.0)
