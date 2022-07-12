@@ -42,3 +42,13 @@
 
 // N is an integer within the range [1..100,000];
 // each element of array A is an integer within the range [1..1,000,000,000].
+function solution(A) {
+    // write your code in JavaScript (Node.js 8.9.4)
+    A.sort( ( a, b ) => ( a - b ) );
+    for (let i = 0;i < A.length;i++)
+    {
+        if (A[i] !== i + 1)
+            return 0
+    }
+    return 1;
+}
