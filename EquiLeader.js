@@ -94,6 +94,7 @@ function solution(A) {
 
   return equiLeaders;
 }
+
 function solution(A) {
     var rightCounters=[]
     var leftCounters=[]
