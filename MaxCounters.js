@@ -53,7 +53,7 @@
 // this is my solution : it timed out
 function solution(N, A) {
     // write your code in JavaScript (Node.js 8.9.4)
-		  let a = new Array(N)
+    let a = new Array(N)
     a.fill(0)
     let max = 0;
     for (let i = 0; i < A.length ;i++)
